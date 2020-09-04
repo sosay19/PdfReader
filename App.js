@@ -60,7 +60,7 @@ export default class App extends Component<Props> {
         'App',
         'onLeadingNavButtonPressed',
         [
-          {text: 'OK', onPress: () => console.log('OK Pressed')},
+          { text: 'OK', onPress: () => console.log('OK Pressed') },
         ],
         { cancelable: true }
       )
@@ -84,7 +84,8 @@ export default class App extends Component<Props> {
 
     return (
       <DocumentView
-      followSystemDarkMode={true}
+      padStatusBar={true}
+        followSystemDarkMode={true}
         document={path}
         showLeadingNavButton={true}
         leadingNavButtonIcon={Platform.OS === 'ios' ? 'ic_close_black_24px.png' : 'ic_arrow_back_white_24dp'}
